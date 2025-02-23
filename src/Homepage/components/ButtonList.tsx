@@ -3,27 +3,27 @@ import Button from "./Button";
 import { Menu } from "lucide-react";
 
 interface ButtonListProps {
-  primaryText: string;
-  setLogin?: string;
-  primaryAction: () => void;
-  secondaryAction?: () => void;
+  SignUpText: string;
+  setLoginText?: string;
+  SignupAction: () => void;
+  LoginAction?: () => void;
 }
 
 const ButtonList: React.FC<ButtonListProps> = ({
-  primaryText,
-  setLogin,
-  primaryAction,
-  secondaryAction = () => {},
+  SignUpText,
+  setLoginText,
+  SignupAction,
+  LoginAction = () => {},
 }) => {
   return (
     <div className="flex items-center gap-4">
-      {setLogin && (
-        <Button onClick={secondaryAction} variant="secondary">
-          {setLogin}
+      {setLoginText && (
+        <Button onClick={LoginAction} variant="secondary">
+          {setLoginText}
         </Button>
       )}
-      <Button onClick={primaryAction} variant="primary">
-        {primaryText}
+      <Button onClick={SignupAction} variant="primary">
+        {SignUpText}
       </Button>
       <Button variant="icon" className="block md:hidden">
         <Menu className="w-6 h-6 text-[#14274E]" />

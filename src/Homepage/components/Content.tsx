@@ -7,10 +7,10 @@ const Navigation: React.FC = () => {
     <>
       <LogoNav />
       <ButtonList 
-        primaryText="Start Learning" 
-        setLogin="Log In" 
-        primaryAction={() => console.log("Start Learning clicked")} 
-        secondaryAction={() => console.log("Log In clicked")} 
+        SignUpText="Start Learning" 
+        setLoginText="Log In" 
+        SignupAction={() => console.log("Start Learning clicked")} 
+        LoginAction={() => console.log("Log In clicked")} 
       />
     </>
   );

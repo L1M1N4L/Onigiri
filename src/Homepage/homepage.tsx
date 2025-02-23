@@ -1,8 +1,12 @@
 import React from 'react';
-import { BookOpen, Award, Clock, CheckCircle, BarChart, Users, Globe, BookOpenCheck, Laptop } from 'lucide-react';
+import { BookOpen, Award, Clock, CheckCircle, ChevronRight, BarChart, Users, Globe, BookOpenCheck, Laptop } from 'lucide-react';
 import Navigation from './components/Navigation';
 import NavContainer from './components/NavContainer';
 import Content from './components/Content';
+import Hero from './components/Hero';
+import HeroContainer from './components/HeroContainer';
+import HeroGrid from './components/HeroGrid';
+import HeroContent from './components/HeroContent';
 interface CourseLevel {
   level: string;
   description: string;
@@ -38,55 +42,14 @@ const Homepage: React.FC = () => {
       </Navigation>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 md:pt-40 md:pb-32 bg-[#ECE7E2]">
-        <div className="px-6 mx-auto max-w-7xl">
-          <div className="grid gap-12 md:grid-cols-2 items-center">
-            <div>
-              <div className="inline-block px-4 py-2 mb-6 text-sm font-medium bg-[#14274E]/10 text-[#14274E] rounded-full">
-                In partnership with Kouyou Institute
-              </div>
-              <h1 className="text-4xl md:text-6xl font-bold text-[#14274E] leading-tight">
-                Learn Japanese
-                <span className="block mt-2">Anytime, Anywhere</span>
-              </h1>
-              <p className="mt-6 text-xl text-[#14274E]/80">
-                Experience the best of both worlds with ONIGIRI - a modern online learning platform 
-                powered by Kouyou Institute's proven Japanese teaching methodology.
-              </p>
-              <div className="flex flex-wrap gap-4 mt-8">
-                <button className="px-6 py-3 text-[#ECE7E2] bg-[#14274E] rounded-lg hover:bg-[#14274E]/90">
-                  Join Free
-                </button>
-                <button className="px-6 py-3 text-[#14274E] bg-[#14274E]/10 rounded-lg hover:bg-[#14274E]/20">
-                  Explore Courses
-                </button>
-              </div>
-              <div className="grid grid-cols-3 gap-4 mt-12">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-[#14274E]">200+</div>
-                  <div className="text-sm text-[#14274E]/70">Interactive Lessons</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-[#14274E]">50K+</div>
-                  <div className="text-sm text-[#14274E]/70">Active Learners</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-[#14274E]">4.8/5</div>
-                  <div className="text-sm text-[#14274E]/70">Student Rating</div>
-                </div>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="absolute inset-0 bg-[#14274E]/10 rounded-3xl transform rotate-3"></div>
-              <img 
-                src="/api/placeholder/600/400"
-                alt="Japanese Learning Materials"
-                className="relative rounded-3xl shadow-xl"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero>
+      <HeroContainer>
+        <HeroGrid>        
+        <HeroContent/>
+        </HeroGrid>
+      </HeroContainer>
+     </Hero>
+
 
       {/* Platform Features */}
       <section className="py-20 bg-white">
