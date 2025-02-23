@@ -45,7 +45,7 @@ const Homepage: React.FC = () => {
       <Hero>
       <HeroContainer>
         <HeroGrid>        
-        <HeroContent/>
+          <HeroContent/>
         </HeroGrid>
       </HeroContainer>
      </Hero>
