@@ -5,7 +5,7 @@ const HeroImage: React.FC = () => {
     <div className="relative">
       <div className="absolute inset-0 bg-[#14274E]/10 rounded-3xl transform rotate-3"></div>
       <img 
-        src="/api/placeholder/600/400"
+        src="src/Homepage/assets/istockphoto-471051237-612x612.jpg"
         alt="Japanese Learning Materials"
         className="relative rounded-3xl shadow-xl"
       />

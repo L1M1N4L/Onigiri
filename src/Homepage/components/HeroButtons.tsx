@@ -12,7 +12,7 @@ const HeroButton: React.FC<HeroButtonProps> = ({ onJoinClick, onExploreClick }) 
       <Button onClick={onJoinClick} className="px-6 py-3 text-[#ECE7E2] bg-[#14274E] rounded-lg hover:bg-[#14274E]/90">
         Join Free
       </Button>
-      <Button onClick={onExploreClick} className="px-6 py-3 text-[#14274E] bg-[#14274E]/10 rounded-lg hover:bg-[#14274E]/20">
+      <Button onClick={onExploreClick} className="px-6 py-3 text-[#ECE7E2] bg-[#14274E]/10 rounded-lg hover:bg-[#14274E]/90">
         Explore Courses
       </Button>
     </div>
