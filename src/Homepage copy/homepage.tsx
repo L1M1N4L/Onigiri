@@ -1,5 +1,4 @@
 import React from "react";
-import { Outlet } from 'react-router-dom';
 import {
   BookOpen,
   Award,
@@ -212,9 +211,6 @@ const Homepage: React.FC = () => {
           </div>
         </HomeContainer>
       </section>
-
-      {/* Auth Pages Outlet */}
-      <Outlet />
 
       {/* Success Stories & CTA Section */}
       <section className="py-20 bg-gradient-to-b from-stone-50 to-[#ECE7E2]">
