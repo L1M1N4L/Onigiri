@@ -1,13 +1,7 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import OnigiriLogo from '../Homepage/assets/ONIGIRI.svg';
-import { UserCircle, BookOpen, FileText, Book, PlayCircle, Calendar, Lock, Unlock, ChevronRight, TrendingUp } from 'lucide-react';
 import UserHeader from '../components/UserHeader';
-import AdminSidebar from '../components/admin/AdminSidebar';
-import AdminStats from '../components/admin/AdminStats';
-import AdminUpload from '../components/admin/AdminUpload';
-import AdminLessonsTable from '../components/admin/AdminLessonsTable';
-import AdminUsersTable from '../components/admin/AdminUsersTable';
+import UserSidebar from '../components/UserSidebar';
+import { BookOpen, FileText, Book, PlayCircle, Calendar, Lock, ChevronRight, TrendingUp } from 'lucide-react';
 
 const modules = [
   {
@@ -63,7 +57,7 @@ const Dashboard: React.FC = () => {
   const [showPlanner, setShowPlanner] = useState(false);
   return (
     <div className="min-h-screen flex bg-[#F8F9FA]">
-      <AdminSidebar />
+      <UserSidebar />
       <div className="flex-1 flex flex-col">
         <UserHeader />
         <main className="flex-1 p-8 space-y-8">
