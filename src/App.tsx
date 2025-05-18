@@ -6,12 +6,15 @@ import { doc, getDoc } from 'firebase/firestore';
 import Homepage from './Homepage/homepage';
 // import About from './pages/About';
 // import Contact from './pages/Contact';
-// import Courses from './pages/Courses';
+import Courses from './pages/Courses';
 import Lessons from './pages/Lessons';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Dashboard from './pages/Dashboard';
 import AdminDashboard from './pages/AdminDashboard';
+import Pricing from './pages/Pricing';
+import Simulation from './pages/Simulation';
+import N5CompleteCourse from './pages/N5CompleteCourse';
 
 function RequireAuth({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
@@ -74,6 +77,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/pricing" element={<Pricing />} />
         <Route
           path="/dashboard"
           element={
@@ -83,10 +87,34 @@ function App() {
           }
         />
         <Route
+          path="/courses"
+          element={
+            <RequireAuth>
+              <Courses />
+            </RequireAuth>
+          }
+        />
+        <Route
           path="/lessons"
           element={
             <RequireAuth>
               <Lessons />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/simulation"
+          element={
+            <RequireAuth>
+              <Simulation />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/courses/n5"
+          element={
+            <RequireAuth>
+              <N5CompleteCourse />
             </RequireAuth>
           }
         />
@@ -100,7 +128,6 @@ function App() {
         />
         {/* <Route path="/about" element={<About />} /> */}
         {/* <Route path="/contact" element={<Contact />} /> */}
-        {/* <Route path="/courses" element={<Courses />} /> */}
       </Routes>
     </Router>
   );
