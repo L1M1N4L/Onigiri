@@ -5,3 +5,7 @@
 @theme {
   --font-poppins: "Poppins", "sans-serif";
 }
+
+*{
+font-family: "Poppins", "sans-serif" !important;
+}
