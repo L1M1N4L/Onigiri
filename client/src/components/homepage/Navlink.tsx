@@ -10,7 +10,7 @@ export default function Navlink({location, children} : Props){
         <NavLink 
         to={location}
         className={ ({ isActive }) =>
-            `text-xl hover:-translate-y-1 transition-all ${isActive ? "text-[#E56E0C]" : "text-[#333F72]"}`
+            `text-lg font-medium hover:-translate-y-1 transition-all duration-300 px-3 py-2 rounded-lg ${isActive ? "text-[#E56E0C] bg-orange-50" : "text-[#333F72] hover:text-[#E56E0C] hover:bg-gray-50"}`
         }
         >{children}</NavLink>
     )
