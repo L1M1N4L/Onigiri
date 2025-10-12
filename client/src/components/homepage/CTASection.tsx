@@ -1,45 +1,76 @@
-import StyledButton from "./StyledButton";
 
-export default function CTASection() {
+import React from 'react';
+import StyledButton from './StyledButton';
+
+export default function OnigiriPracticeSection() {
   return (
-    <section className="py-20 bg-gradient-to-r from-[#333F72] to-[#2a3459] relative overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#333F72]/90 to-[#2a3459]/90"></div>
-      <div className="absolute top-0 left-0 w-full h-full opacity-20" style={{
-        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-      }}></div>
-      
-      <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-        <div className="space-y-8">
-          <div className="space-y-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-white">
-              Ready to Master Japanese?
-            </h2>
-            <p className="text-xl text-white/90 max-w-2xl mx-auto">
-              Join thousands of learners who've transformed their Japanese skills with Onigiri. 
-              Start your journey today and make learning addictive!
+    <section className="py-20 bg-[#faf5ef] relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left Side - Content */}
+          <div>
+            <h1 className="text-5xl font-bold text-[#333F72] mb-6 leading-tight">
+              Ready to master<br/><span className="text-[#E56E0C]">Japanese?</span>
+            </h1>
+
+            <p className="text-[#333F72]/70 text-lg leading-relaxed mb-8">
+              Join 25K+ learners already mastering Japanese with Onigiri. 
+              Start your journey today - it's free!
             </p>
-          </div>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <StyledButton>Start Learning Free</StyledButton>
-            <button className="px-8 py-4 border-2 border-white text-white rounded-tl-3xl rounded-br-3xl hover:bg-white hover:text-[#333F72] transition-all duration-300 font-medium">
-              View Pricing
-            </button>
-          </div>
-          
-          <div className="flex flex-wrap justify-center gap-8 pt-8">
-            <div className="flex items-center gap-2 text-white/80">
-              <span className="text-green-400">✓</span>
-              <span>Free to start</span>
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              <StyledButton>Start Learning Free</StyledButton>
+              <button className="px-12 py-4 border-2 border-[#333F72]/20 text-[#333F72] rounded-tl-3xl rounded-br-3xl hover:border-[#333F72] transition-all duration-300 font-semibold text-lg hover:bg-[#333F72]/5">
+                Watch Demo
+              </button>
             </div>
-            <div className="flex items-center gap-2 text-white/80">
-              <span className="text-green-400">✓</span>
-              <span>No credit card required</span>
+          </div>
+
+          {/* Right Side - Background App Interface */}
+          <div className="relative h-full min-h-[600px] bg-gradient-to-b from-[#333F72]/10 via-[#E56E0C]/5 to-transparent rounded-t-3xl overflow-hidden">
+            {/* Placeholder UI Elements */}
+            <div className="absolute top-0 left-8 right-8">
+              <div className="flex gap-4 mb-6 mt-8">
+                <div className="h-8 w-24 bg-[#333F72]/20 rounded-lg"></div>
+                <div className="h-8 w-28 bg-[#E56E0C]/20 rounded-lg"></div>
+                <div className="h-8 w-20 bg-[#333F72]/20 rounded-lg"></div>
+              </div>
+              <div className="grid grid-cols-4 gap-3 mb-4">
+                <div className="h-12 bg-white rounded-lg shadow-sm border border-[#333F72]/10"></div>
+                <div className="h-12 bg-white rounded-lg shadow-sm border border-[#333F72]/10"></div>
+                <div className="h-12 bg-white rounded-lg shadow-sm border border-[#333F72]/10"></div>
+                <div className="h-12 bg-white rounded-lg shadow-sm border border-[#333F72]/10"></div>
+              </div>
+              <div className="h-10 bg-[#333F72] rounded-lg mb-4"></div>
+              
+              {/* Course Cards */}
+              <div className="space-y-3">
+                <div className="bg-white rounded-xl p-3 shadow-sm flex gap-3 border border-[#333F72]/10">
+                  <div className="w-20 h-16 bg-gradient-to-br from-[#E56E0C] to-[#f97316] rounded-lg"></div>
+                  <div className="flex-1">
+                    <div className="h-3 bg-[#333F72]/30 rounded w-3/4 mb-2"></div>
+                    <div className="h-2 bg-[#333F72]/20 rounded w-full mb-1"></div>
+                    <div className="h-2 bg-[#333F72]/20 rounded w-2/3"></div>
+                  </div>
+                </div>
+                <div className="bg-white rounded-xl p-3 shadow-sm flex gap-3 border border-[#333F72]/10">
+                  <div className="w-20 h-16 bg-gradient-to-br from-[#333F72] to-[#1e293b] rounded-lg"></div>
+                  <div className="flex-1">
+                    <div className="h-3 bg-[#333F72]/30 rounded w-3/4 mb-2"></div>
+                    <div className="h-2 bg-[#333F72]/20 rounded w-full mb-1"></div>
+                    <div className="h-2 bg-[#333F72]/20 rounded w-2/3"></div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="flex items-center gap-2 text-white/80">
-              <span className="text-green-400">✓</span>
-              <span>Cancel anytime</span>
+            
+            {/* Center Text */}
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <div className="text-center z-10">
+                <div className="text-6xl mb-4">📱</div>
+                <p className="text-[#333F72] font-semibold text-lg">Practice App Interface</p>
+                <p className="text-[#333F72]/60 text-sm mt-2">Interactive learning dashboard</p>
+              </div>
             </div>
           </div>
         </div>

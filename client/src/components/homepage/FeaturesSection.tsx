@@ -65,6 +65,7 @@ export default function LearningJourneySection() {
               <div className="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-white text-xs font-bold">
                 Join 5K+ streak holders
               </div>
+
             </div>
           </div>
 
