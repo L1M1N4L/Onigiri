@@ -403,7 +403,7 @@ npm install @onigiri/sdk
 import { OnigiriAPI } from '@onigiri/sdk';
 
 const api = new OnigiriAPI({
-  baseURL: 'https://api.onigiri-app.com/v1',
+  baseURL: 'https://api.onigiri-project.com/v1',
   token: 'your-jwt-token'
 });
 
@@ -419,7 +419,7 @@ pip install onigiri-sdk
 from onigiri import OnigiriAPI
 
 api = OnigiriAPI(
-    base_url='https://api.onigiri-app.com/v1',
+    base_url='https://api.onigiri-project.com/v1',
     token='your-jwt-token'
 )
 
@@ -453,6 +453,6 @@ Onigiri supports webhooks for real-time updates:
 ## Support
 
 For API support and questions:
-- **Email**: api-support@onigiri-app.com
-- **Documentation**: https://docs.onigiri-app.com
-- **Status Page**: https://status.onigiri-app.com
+- **Email**: api-support@onigiri-project.com
+- **Documentation**: https://docs.onigiri-project.com
+- **Status Page**: https://status.onigiri-project.com

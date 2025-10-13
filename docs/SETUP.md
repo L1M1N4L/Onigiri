@@ -461,7 +461,7 @@ npm run build
 - **Documentation**: Check the `/docs` folder
 - **Issues**: Create GitHub issues for bugs
 - **Discussions**: Use GitHub Discussions for questions
-- **Email**: Contact support@onigiri-app.com
+- **Email**: Contact support@onigiri-project.com
 
 ## Next Steps
 
