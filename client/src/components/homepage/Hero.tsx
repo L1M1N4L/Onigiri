@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { NavLink } from 'react-router-dom'
 import Title from "./Title"
 import Subtitle from "./Subtitle"
 import StyledButton from "./StyledButton"
@@ -116,9 +117,11 @@ export default function Hero() {
            {/* CTA Buttons */}
            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12" data-parallax="text">
              <StyledButton>Start Learning Free</StyledButton>
-             <button className="px-10 py-5 border-2 border-[#333F72]/20 text-[#333F72] rounded-tl-3xl rounded-br-3xl hover:border-[#333F72] transition-all duration-300 font-semibold text-lg">
+             <NavLink 
+               to="/signup"
+               className="px-10 py-5 border-2 border-[#333F72]/20 text-[#333F72] rounded-tl-3xl rounded-br-3xl hover:border-[#333F72] hover:bg-[#333F72] hover:text-white transition-all duration-300 font-semibold text-lg text-center">
                Watch Demo
-             </button>
+             </NavLink>
            </div>
           
           {/* Trust Badge */}
