@@ -1,4 +1,3 @@
-import Navlink from "./Navlink"
 import Navlogo from "./Navlogo"
 import GetStartedButton from "./Getstarted"
 export default function Navbar(){
@@ -9,11 +8,7 @@ export default function Navbar(){
                     <Navlogo/>
                 </div>
                 
-                <div className="flex items-center gap-8">
-                    <Navlink location="/home">Home</Navlink>
-                    <Navlink location="/features">Features</Navlink>
-                    <Navlink location="/pricing">Pricing</Navlink>
-                    <Navlink location="/about">About</Navlink>
+                <div className="flex items-center">
                     <GetStartedButton/>
                 </div>
             </div>
