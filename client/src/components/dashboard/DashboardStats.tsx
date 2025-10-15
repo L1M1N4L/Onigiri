@@ -2,13 +2,13 @@ import React from 'react';
 
 export default function DashboardStats() {
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 relative z-0">
       {/* Practice Completed */}
       <div className="bg-[#faf5ef] rounded-2xl p-4 shadow-md border-2 border-[#333F72]">
         <div className="text-center">
-          <div className="relative inline-block mb-3">
+          <div className="relative inline-block mb-3 z-0">
             <img src="https://via.placeholder.com/50x50/4c5a7f/ffffff?text=🎯" alt="completed" className="w-14 h-14 rounded-xl object-cover" />
-            <div className="absolute -top-1 -right-1 w-4 h-4 bg-green-500 rounded-full flex items-center justify-center">
+            <div className="absolute -top-1 -right-1 w-4 h-4 bg-green-500 rounded-full flex items-center justify-center z-0">
               <span className="text-white text-xs font-bold">+</span>
             </div>
           </div>

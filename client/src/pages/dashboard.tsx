@@ -12,7 +12,7 @@ export default function Dashboard() {
     <div className="min-h-screen bg-gradient-to-br from-[#faf5ef] via-[#f8f3ed] to-[#f5f0e8]">
       <DashboardHeader />
       
-      <main className="max-w-7xl mx-auto px-4 py-6">
+      <main className="max-w-7xl mx-auto px-4 py-6 relative z-0">
         {/* Welcome Section */}
         <div className="mb-6">
           <div className="bg-[#faf5ef] rounded-2xl p-6 shadow-md border-2 border-[#333F72]">
