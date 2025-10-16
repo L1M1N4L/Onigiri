@@ -3,6 +3,9 @@ import Homepage from "../pages/Homepage"
 import SignupPage from "../pages/SignupPage"
 import Dashboard from "../pages/dashboard"
 import CoursesPage from "../pages/CoursesPage"
+import SimulationPage from "../pages/SimulationPage"
+import LogStatsPage from "../pages/LogStatsPage"
+import ExamPagesPage from "../pages/ExamPagesPage"
 
 export default function AppRoutes(){
     return(
@@ -12,6 +15,9 @@ export default function AppRoutes(){
             <Route path="/signup" element={<SignupPage />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/courses" element={<CoursesPage />} />
+            <Route path="/simulation" element={<SimulationPage />} />
+            <Route path="/log-stats" element={<LogStatsPage />} />
+            <Route path="/exam-pages" element={<ExamPagesPage />} />
         </Routes>
     )
 }

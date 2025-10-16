@@ -38,7 +38,7 @@ export default function DashboardHeader() {
             <button onClick={() => navigate('/dashboard')} className="hover:text-[#333F72] transition-all duration-150 ease-in-out">Dashboard</button>
             <button onClick={() => navigate('/courses')} className="hover:text-[#333F72] transition-all duration-150 ease-in-out">Courses</button>
             <button className="hover:text-[#333F72] transition-all duration-150 ease-in-out">Flashcards</button>
-            <button className="hover:text-[#333F72] transition-all duration-150 ease-in-out">Progress</button>
+            <button onClick={() => navigate('/simulation')} className="hover:text-[#333F72] transition-all duration-150 ease-in-out">Simulation</button>
             <button className="hover:text-[#333F72] transition-all duration-150 ease-in-out">Community</button>
           </nav>
           
